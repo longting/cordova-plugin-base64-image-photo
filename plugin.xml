@@ -16,8 +16,8 @@
             </feature>
         </config-file>
 
-        <preference name="PHOTOLIBRARY_Additions_USAGE_DESCRIPTION" default=" " />
-        <config-file target="*-Info.plist" parent="NSPhotoLibraryAdditionsUsageDescription">
+        <preference name="PHOTOLIBRARY_ADD_USAGE_DESCRIPTION" default=" " />
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription">
             <string>保存图片到相册，需要您的允许</string>
         </config-file>
 

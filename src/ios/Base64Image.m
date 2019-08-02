@@ -2,7 +2,7 @@
 //  Base64Image.m
 //  cordovaTest
 //
-//  Created by huishidai on 2019/8/2.
+//  Created by longting on 2019/8/2.
 //
 
 #import "Base64Image.h"
