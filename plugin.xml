@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-base64-image-photo" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--插件名-->
+    <name>Base64Image</name>
+    <!--js部分配置-->
+    <js-module name="Base64Image" src="www/cordova-plugin-base64-image-photo.js">
+    <!--js调用的对象名-->
+    <clobbers target="Base64Image" />
+    </js-module>
+
+     <!-- ios 
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Base64Image">
+                <param name="ios-package" value="Base64ImagePlugin"/>
+            </feature>
+        </config-file>
+        
+        <source-file src="src/ios/TestPlugin.m" />
+        <header-file src="src/ios/TestPlugin.h" />
+        <source-file src="src/ios/TestViewController.m" />
+        <header-file src="src/ios/TestViewController.h" />
+        <resource-file src="src/ios/TestViewController.xib" />
+
+    </platform>-->
+
+    <!--android-->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*"> 
+            <!--js调用的对象名-->
+            <feature name="Base64Image">
+                <!-- value=java类名全路径-->
+                <param name="android-package" value="com.wandong.cordova.base64img.Base64ImagePlugin"/>
+            </feature> 
+        </config-file> 
+      
+        <!-- src:java源文件的路径， target-dir:插件安装好后，源文件的位置，要和上面的包名对应 -->
+        <!--跟插件所有有关的类文件，layout文件等等都要一一配置在下方-->
+        <source-file src="src/android/Base64ImagePlugin.java" target-dir="src/com/wandong/cordova/base64img" /> 
+
+
+    </platform>
+
+
+</plugin>

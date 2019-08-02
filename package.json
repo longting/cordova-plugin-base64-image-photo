@@ -1,0 +1,16 @@
+{
+    "name": "cordova-plugin-base64-image-photo",
+    "version": "1.0.0",
+    "description": "save base64 image to mobile photo",
+    "cordova": {
+        "id": "cordova-plugin-base64-image-photo",
+        "platforms": [
+            "android"
+        ]
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "longting",
+    "license": "ISC"
+}
