@@ -8,21 +8,25 @@
     <clobbers target="Base64Image" />
     </js-module>
 
-     <!-- ios 
+     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="Base64Image">
-                <param name="ios-package" value="Base64ImagePlugin"/>
+                <param name="ios-package" value="Base64Image"/>
             </feature>
         </config-file>
-        
-        <source-file src="src/ios/TestPlugin.m" />
-        <header-file src="src/ios/TestPlugin.h" />
-        <source-file src="src/ios/TestViewController.m" />
-        <header-file src="src/ios/TestViewController.h" />
-        <resource-file src="src/ios/TestViewController.xib" />
 
-    </platform>-->
+        <preference name="PHOTOLIBRARY_Additions_USAGE_DESCRIPTION" default=" " />
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryAdditionsUsageDescription">
+            <string>保存图片到相册，需要您的允许</string>
+        </config-file>
+
+        
+        <source-file src="src/ios/Base64Image.m" />
+        <header-file src="src/ios/Base64Image.h" />
+
+
+    </platform>
 
     <!--android-->
     <platform name="android">
