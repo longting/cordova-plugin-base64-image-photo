@@ -4,12 +4,12 @@ var exec = require('cordova/exec');
 var pluginName = 'Base64Image';
 
 let Base64Image = {
-	save: function(base64, success, error) {
+	save(base64Str, success, error) {
 		//参数1和参数2分别是调用插件成功和失败的回调方法（js）
 	    //参数3是插件名
 	    //参数4是方法名
 	    //参数5是js的传参
-        exec(success, error, pluginName , 'save', [base64]);
+        exec(success, error, pluginName , 'save', [base64Str]);
     },
 };
 module.exports = Base64Image;
